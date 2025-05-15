@@ -354,7 +354,6 @@
                 <table class="custom-table" id="table">
                     <thead>
                         <tr>
-                            <th><input type='checkbox' id='select-all'> Select All</th>
                             <th>Shipment Number</th>
                             <th>Origin</th>
                             <th>Destination</th>
@@ -366,9 +365,6 @@
                     <tbody>
                         @foreach($shipments as $shipment)
                             <tr>
-                                <td>
-                                    <input type='checkbox' class='user-checkbox' name='user_ids[]' value='{{ $shipment->shipment_id }}'>
-                                </td>
                                 <td>{{ $shipment->shipment_id }}</td>
                                 <td>{{ $shipment->origin }}</td>
                                 <td>{{ $shipment->destination }}</td>
